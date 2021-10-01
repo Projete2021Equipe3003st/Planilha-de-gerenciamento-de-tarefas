@@ -35,12 +35,12 @@ export default function App() {
   );
 
   const LinkPagina=(p)=>{
-    if(p==1){
+    if(p==="1"){
       window.open('http://localhost:3000/materia/1' , "_self")
     }
   }
   const retornarPagina=()=>{
-    if(pagina==1){
+    if(pagina==="1"){
       return <AtividadesEspecificas/>
     }
     else{

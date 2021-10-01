@@ -1,4 +1,4 @@
-import Calendario from './Calendar';
+import Calendario from './CalendarRecover';
 
 
 export default function ListRecover(props){
@@ -7,9 +7,10 @@ const {Atividades} = props
         <div>
         {Atividades.map((task) =>(
             <div key={task.id}>
-              {task.Atividadade}
+              {task.Atividade}
               <div>
-              <Calendario/>
+              <Calendario
+              Value={task.Data}/>
               </div>
             </div>
           ))}
