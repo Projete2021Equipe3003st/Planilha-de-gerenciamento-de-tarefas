@@ -1,19 +1,22 @@
 import { onSnapshot, collection } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import db from "./components/firebase";
+import db from "./firebase";
 import './App.css';
-import  Form  from './components/Form';
-import ListRecover from "./components/ListRecover";
+import  Form  from './Form';
+import ListRecover from "./ListRecover";
 
-export default function AtividadesEspecificas() {
+export default function AtividadesEspecificas(props) {
   const [Atividades, setAtividades] = useState([]);
+  const {id}=props
+
   useEffect(
-    () =>
-    onSnapshot(collection(db, "Atividades"), (snapshot) => 
-      setAtividades(snapshot.docs.map((doc) => ({...doc.data(), id: doc.id})))
-    ),
-    []
-  );
+      ()=>{
+      onSnapshot(collection(db, id), (snapshot) => 
+      setAtividades(snapshot.docs.map((doc) => ({...doc.data(), id: doc.id}))))
+    },[]
+)
+
+
 
   return (
     <div className="App">
