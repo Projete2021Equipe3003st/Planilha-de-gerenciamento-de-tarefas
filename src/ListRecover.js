@@ -14,7 +14,7 @@ useEffect(
   []
 )
     return(
-        <div>
+        <div className="addList">
         {Atividades.map((task) =>(
             <div key={task.id}>
               {task.Atividade}
