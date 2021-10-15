@@ -2,6 +2,7 @@ import { onSnapshot, collection, addDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import db from '../firebase';
 import AtividadesEspecificas from "../Paginacao";
+import './pages.css';
 
 export default function Materias() {
     const [text, setText] = useState("");

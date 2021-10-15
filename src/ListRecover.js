@@ -1,6 +1,7 @@
 import Calendario from './CalendarRecover';
 import {handleEdit, handleDelete} from './util'
 import { useEffect, useState } from "react";
+import './App.css';
 
 export default function ListRecover(props){
 const {Atividades} = props
@@ -17,13 +18,13 @@ useEffect(
         <div className="addList">
         {Atividades.map((task) =>(
             <div key={task.id}>
-              {task.Atividade}
+               {task.Atividade}
               <div>
               <Calendario
               Value={task.Data}/>
               </div>
-              <button onClick={() => handleEdit(task.id, task.Data, id)}>Editar</button>
-              <button onClick={() => handleDelete(task.id, id)}>Deletar</button>
+              <button className="ListButton"  onClick={() => handleEdit(task.id, task.Data, id)}>Editar</button>
+              <button className="ListButton" onClick={() => handleDelete(task.id, id)}>Deletar</button>
             </div>
           ))}
           </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {collection, addDoc} from "firebase/firestore"
 import db from "./firebase";
 import DateTimePicker from 'react-datetime-picker';
-
+import './App.css';
 
 
 export default function Form() {
@@ -38,7 +38,7 @@ export default function Form() {
                 minDate={new Date()}
             />
         <button 
-        className="btn btn-light"
+        className="XButton"
         onClick={handleNew}
         >
         +

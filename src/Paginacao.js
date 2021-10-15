@@ -17,7 +17,7 @@ export default function AtividadesEspecificas(props) {
   )
 
   return (
-    <div className="atividade1">
+    <div >
       <Form />
       <ListRecover
         Atividades={Atividades} 

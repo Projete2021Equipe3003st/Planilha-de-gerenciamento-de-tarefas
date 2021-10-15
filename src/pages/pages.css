@@ -1,0 +1,19 @@
+
+.buttonAdd{
+    background: rgb(66, 63, 85);
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 150x;
+    height: 25px;
+  }
+  
+  
+  .buttonAdd:hover{
+    background: rgb(84, 74, 138);
+    padding: 3x;
+    border-radius: 5px;
+    border: none;
+    width: 150x;
+    height: 25px;
+  }
