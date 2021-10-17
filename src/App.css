@@ -55,6 +55,7 @@ body{
   margin: 50px;
   padding: 50px;
   height: 65vh;
+  overflow: auto;
 }
 
 .boxMaterias{
