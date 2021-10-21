@@ -1,7 +1,8 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
+import { GoCalendar } from "react-icons/go";
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
+
 //add materias no menu
 export const SidebarData = [
   {
@@ -20,7 +21,7 @@ export const SidebarData = [
   {
     title: 'Calendário',
     path: '/Calendario',
-    icon: <FaIcons.FaCartPlus />,
+    icon: <GoCalendar />,
     cName: 'nav-text'
   },
 ];
