@@ -1,1 +1,1 @@
-# Planilha degerenciamento de tarefas
+# Planilha de gerenciamento de tarefas
